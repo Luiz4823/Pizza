@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #dbdbdb;
+}
+header{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+i{
+    display: none;
+    color: white;
+    font-size: 2em;
+    align-self: center;
+    margin-top: 10px;
+}
+header div ul li{
+    display: inline;
+    color: white;
+    padding: 10px;
+    list-style: none;
+}
+header div img{
+    margin: 0 20px;
+}
+header div h1{
+    color: #37a947;
+}
+.brand-white{
+    color: white;
+}
+.brand-red{
+    color: red;
+}
+.menu-item{
+    color: white;
+    text-decoration: none;
+}
+main{
+    padding: 150px 205px ;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+.main-div{
+    margin: 0 20px 25px 0;
+    padding: 30px 35px;
+    height: 500px;
+    width: 700px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-shrink: 0;  
+}
+.envio{
+    background-image: url(/resources/img/fea830130f8bf264fbb6d8e826d25d65.jpeg);
+    background-size: 100% 100%;   
+}
+h2{
+    color: red;
+    font-size: 2em;
+    margin-bottom: 65px;
+}
+h3{
+    color: #222222;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1.8em;
+}
+.podio{
+    text-align: center;
+    background-image: url(/resources/img/1aebce4d11170fdec8306b95cf0c812f.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 80% 60%;
+    background-color: white;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+ol{
+    text-align: left;
+    line-height: 40px;
+    font-size: 1.3em;
+    color: #222222;
+    font-weight: 600;
+}
+main div h3, main div ol{
+    margin-left: 35px;
+}
+footer{
+    margin-top: auto;
+    background-color: #222222;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    line-height: 40px;
+    list-style: none;
+}
+.footer-name{
+    color: #37a947;
+}
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+}
+.footer-logo-container img{
+    margin-right: 20px;
+}
+@media (max-width: 1470px) {
+    main{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 780px) {
+    i{
+        display: inline;
+    }
+    .main-menu{
+        display: none;
+    }
+    .main-div{
+        margin-right: 0;
+    }
+    footer{
+        flex-direction: row-reverse;
+    }
+  }
+
