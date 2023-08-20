@@ -64,6 +64,7 @@ main{
     box-sizing: border-box;
     border-radius: 10px;
     flex-shrink: 0;  
+    font-size: em;
 }
 .envio{
     background-image: url(/resources/img/fea830130f8bf264fbb6d8e826d25d65.jpeg);
@@ -72,7 +73,7 @@ main{
 h2{
     color: red;
     font-size: 2em;
-    margin-bottom: 65px;
+    margin-bottom: 10%;
 }
 h3{
     color: #222222;
@@ -90,7 +91,6 @@ h3{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    
 }
 ol{
     text-align: left;
@@ -143,4 +143,20 @@ footer ul li{
         flex-direction: row-reverse;
     }
   }
-
+  @media (max-width: 725px) {
+    .main-div{
+        padding: 15px 30px;
+        height: 250px;
+        width: 350px;
+        font-size: 11px;
+    }
+    ol{
+        line-height: 15px;
+    }
+  }
+  @media (max-width: 420px) {
+    main{
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
